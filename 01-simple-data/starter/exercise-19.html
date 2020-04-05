@@ -11,7 +11,8 @@
     <p>Open the web inspector console to test.</p>
   </body>
   <script>
-    const comment = `Lorem ipsum dolor, notallowed sit amet consectetur adipisicing elit.`;
-    console.log();
+    const comment = `Lorem ipsum dolor, sit amet consectetur adipisicing elit.`;
+    const isBlacklisted = comment.includes(`notallowed`);
+    console.log(isBlacklisted);
   </script>
 </html>
